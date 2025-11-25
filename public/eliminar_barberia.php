@@ -4,7 +4,7 @@ session_start();
 
 // Solo un admin puede borrar :)
 if (!isset($_SESSION['rol']) || $_SESSION['rol'] !== 'admin') {
-    header("Location: login.html");
+    header("Location: index.php");
     exit();
 }
 

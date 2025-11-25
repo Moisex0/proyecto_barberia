@@ -4,7 +4,7 @@ require_once("bd.php");
 
 // Solo admin puede utilizar esta función :)
 if (!isset($_SESSION['rol']) || $_SESSION['rol'] !== 'admin') {
-    header("Location: login.php");
+    header("Location: index.php");
     exit();
 }
 
@@ -39,7 +39,7 @@ if (isset($_POST['confirmar'])) {
 <head>
 <meta charset="UTF-8">
 <title>Resetear Base de Datos - CodBarber</title>
-<link rel="stylesheet" href="public/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
 
 <style>
     body {

@@ -3,7 +3,7 @@ session_start(); // Inicio sesión :)
 
 // Si no está logueado lo mando al login :)
 if (!isset($_SESSION['usuario'])) {
-    header("Location: login.html");
+    header("Location: index.php");
     exit();
 }
 ?>
@@ -14,7 +14,7 @@ if (!isset($_SESSION['usuario'])) {
   <meta charset="UTF-8">
   <title>Panel - CodBarber</title>
 
-  <link rel="stylesheet" href="public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 
   <!-- Fuente -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -110,6 +110,6 @@ if (!isset($_SESSION['usuario'])) {
 
 </div>
 
-<script src="public/js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

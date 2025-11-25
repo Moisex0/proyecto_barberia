@@ -1,7 +1,14 @@
 <?php
 
 // Archivo de la conexion :)
-$conexion = pg_connect("host=localhost port=5432 dbname=codbarber user=postgres password=msh79000");
+//$conexion = pg_connect("host=localhost port=5432 dbname=codbarber user=postgres password=msh79000");
+$host = "dpg-d4idlvf5r7bs73eg0h2g-a.oregon-postgres.render.com";
+$port = "5432";
+$dbname = "codbarber";
+$user = "codbarber";
+$password = "BNQhm48yvi0w6WzWuahl9H7e0tHJDVWh";
+
+$conexion = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$password sslmode=require");
 
 if (!$conexion) {
     echo "Error al conectar con la base de datos:( " . pg_last_error();

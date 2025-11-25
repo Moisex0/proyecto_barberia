@@ -15,7 +15,7 @@ $clientes = seleccionar("SELECT id_cliente, nombre, telefono, correo FROM client
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clientes - CodBarber</title>
 
-  <link rel="stylesheet" href="public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 
   <!-- Tipografía -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -149,7 +149,7 @@ $clientes = seleccionar("SELECT id_cliente, nombre, telefono, correo FROM client
     </div>
 </div>
 
-<script src="public/js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

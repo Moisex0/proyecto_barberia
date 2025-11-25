@@ -4,7 +4,7 @@ include("bd.php"); // Conexión :)
 
 // Reviso que haya sesión :)
 if (!isset($_SESSION['usuario'])) {
-    header("Location: login.html");
+    header("Location: index.php");
     exit();
 }
 

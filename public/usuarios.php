@@ -5,7 +5,7 @@ include("bd.php"); // Conexión a la BD :)
 
 // Verifico que esté logueado y que sea admin :)
 if (!isset($_SESSION['rol']) || $_SESSION['rol'] !== 'admin') {
-    header("Location: login.php");
+    header("Location: index.php");
     exit();
 }
 
@@ -19,7 +19,7 @@ $usuarios = seleccionar("SELECT id_usuario, nombre_usuario, rol FROM usuario ORD
     <meta charset="UTF-8">
     <title>Usuarios - CodBarber</title>
 
-    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <!-- Fuente Montserrat :) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -186,6 +186,6 @@ $usuarios = seleccionar("SELECT id_usuario, nombre_usuario, rol FROM usuario ORD
     </table>
 </div>
 
-<script src="public/js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -31,7 +31,7 @@ $citas = seleccionar("SELECT id_cita, fecha, hora FROM cita ORDER BY fecha, hora
   <meta charset="UTF-8">
   <title>Editar Pago - CodBarber</title>
 
-  <link rel="stylesheet" href="public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 
   <!-- Tipografía :) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -169,7 +169,7 @@ $citas = seleccionar("SELECT id_cita, fecha, hora FROM cita ORDER BY fecha, hora
   </div>
 </div>
 
-<script src="public/js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 
 <?php ob_end_flush(); ?> <!-- Finaliza buffer :) -->
 

@@ -25,7 +25,7 @@ $barberias = seleccionar("SELECT id_barberia, nombre FROM barberia", []);
     <meta charset="UTF-8">
     <title>Barberos</title>
 
-    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <!-- Tipografía -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -201,7 +201,7 @@ $barberias = seleccionar("SELECT id_barberia, nombre FROM barberia", []);
 
 </div>
 
-<script src="public/js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

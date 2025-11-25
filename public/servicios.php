@@ -5,7 +5,7 @@ include("bd.php");
 
 // Verifico sesión :)
 if (!isset($_SESSION['usuario'])) {
-    header("Location: login.html");
+    header("Location: index.php");
     exit();
 }
 
@@ -41,7 +41,7 @@ $servicios = seleccionar("
 <head>
 <meta charset="UTF-8">
 <title>Servicios - CodBarber</title>
-<link rel="stylesheet" href="public/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
 
 <style>
     body {
@@ -215,6 +215,6 @@ $servicios = seleccionar("
 
 </div>
 
-<script src="public/js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@ include("bd.php"); // Conexión :)
 
 // Si no hay sesión lo mando al login :)
 if (!isset($_SESSION['usuario'])) {
-    header("Location: login.html");
+    header("Location: index.php");
     exit();
 }
 
@@ -33,7 +33,7 @@ $pagos = pg_query($conexion, "
   <meta charset="UTF-8">
   <title>Pagos - CodBarber</title>
 
-  <link rel="stylesheet" href="public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 
   <!-- Tipografía -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -211,6 +211,6 @@ $pagos = pg_query($conexion, "
 
 </div>
 
-<script src="public/js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

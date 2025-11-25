@@ -3,7 +3,7 @@ session_start(); // Inicio sesión :)
 
 // Si no hay sesión o no es empleado lo regreso al login :)
 if (!isset($_SESSION["usuario"]) || $_SESSION["rol"] !== "empleado") {
-    header("Location: login.html");
+    header("Location: login.php");
     exit();
 }
 

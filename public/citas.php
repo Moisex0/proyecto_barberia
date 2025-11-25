@@ -21,7 +21,7 @@ $citas = seleccionar("
   <meta charset="UTF-8">
   <title>Citas - CodBarber</title>
 
-  <link rel="stylesheet" href="public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 
   <style>
     body {

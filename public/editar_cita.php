@@ -96,7 +96,7 @@ $hora_val  = $cita["hora"] ? substr($cita["hora"], 0, 5) : "";
 <head>
 <meta charset="UTF-8">
 <title>Editar Cita - CodBarber</title>
-<link rel="stylesheet" href="public/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
 
 <style>
     body {

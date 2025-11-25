@@ -16,7 +16,7 @@ $barberias = seleccionar("SELECT id_barberia, nombre, direccion FROM barberia OR
     <meta charset="UTF-8">
     <title>Barberías</title>
 
-    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -150,7 +150,7 @@ $barberias = seleccionar("SELECT id_barberia, nombre, direccion FROM barberia OR
     </table>
 </div>
 
-<script src="public/js/bootstrap.bundle.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

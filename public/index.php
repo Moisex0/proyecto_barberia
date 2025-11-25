@@ -60,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 
   <style>
 
@@ -161,7 +161,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <h2>CodBarber</h2>
     </div>
 
-    <form action="login.php" method="POST">
+    <form action="index.php" method="POST">
       <div class="mb-3">
         <label for="usuario" class="form-label">Usuario:</label>
         <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Ingresa tu usuario" required>
@@ -194,7 +194,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
   </div>
 
-  <script src="public/js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
 
   <?php if (!empty($error)): ?>
   <script>
