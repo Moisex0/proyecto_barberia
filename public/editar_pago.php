@@ -2,7 +2,6 @@
 ob_start(); // Evita error de headers :)
 
 session_start(); // Inicio sesión siempre ANTES de mostrar algo :)
-include("navbar_admin.php");
 include("bd.php");
 
 // Valido el ID :)
@@ -104,6 +103,8 @@ $citas = seleccionar("SELECT id_cita, fecha, hora FROM cita ORDER BY fecha, hora
 </head>
 <body>
 
+<?php include("navbar_admin.php"); ?>
+
 <div class="container d-flex justify-content-center">
   <div class="box">
 
@@ -135,27 +136,6 @@ $citas = seleccionar("SELECT id_cita, fecha, hora FROM cita ORDER BY fecha, hora
           class="form-control"
           value="<?= htmlspecialchars($pago['monto']) ?>" 
           required>
-      </div>
-
-      <!-- Método de pago :) -->
-      <div class="mb-3">
-        <label class="form-label">Método de pago</label>
-        <input 
-          type="text" 
-          name="metodo_pago" 
-          class="form-control"
-          value="<?= htmlspecialchars($pago['metodo_pago'] ?? '') ?>" 
-          required>
-      </div>
-
-      <!-- Estado :) -->
-      <div class="mb-3">
-        <label class="form-label">Estado</label>
-        <select name="estado" class="form-select" required>
-          <option value="pendiente"  <?= ($pago['estado'] == 'pendiente')  ? 'selected' : '' ?>>Pendiente</option>
-          <option value="pagado"     <?= ($pago['estado'] == 'pagado')     ? 'selected' : '' ?>>Pagado</option>
-          <option value="cancelado"  <?= ($pago['estado'] == 'cancelado')  ? 'selected' : '' ?>>Cancelado</option>
-        </select>
       </div>
 
       <!-- Botones :) -->
