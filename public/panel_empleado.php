@@ -15,7 +15,7 @@ include("navbar_admin.php"); // Uso el mismo navbar para mantener el estilo :)
 <head>
     <meta charset="UTF-8">
     <title>Panel Empleado - CodBarber</title>
-    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <!-- Fuente Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -130,6 +130,6 @@ include("navbar_admin.php"); // Uso el mismo navbar para mantener el estilo :)
 
 </div>
 
-<script src="public/js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
