@@ -2,7 +2,6 @@
 session_start(); // Inicio sesión primero :)
 
 include("bd.php"); // Conexión :)
-include("navbar_admin.php"); // Navbar :)
 
 // Solo admin puede editar :)
 if (!isset($_SESSION['rol']) || $_SESSION['rol'] !== 'admin') {
@@ -34,6 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     header("Location: barberias.php");
     exit();
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -103,6 +103,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 
 <body>
+
+<?php include("navbar_admin.php"); ?>   
 
 <div class="container box">
     <h2>Editar Barbería</h2>
